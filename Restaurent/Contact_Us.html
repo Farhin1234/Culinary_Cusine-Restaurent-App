@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Online Restaurent Meal Website "Culinary Canvas.com"</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header class="header">
+      <a href="#" class="logo"><img src="img/logo.png" />Culinary Canvas</a>
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about_us.html">About Us</a>
+        <a href="Contact_Us.html">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input
+          type="email"
+          placeholder="your email"
+          name="email"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          placeholder="your password"
+          name="psw"
+          required
+          class="box"
+        />
+        <p>forgot password<a href="#"> click here</a></p>
+        <p>don't have an account<a href="#"> create now</a></p>
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember me
+        </label>
+        <p>
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+        </p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+    </header>
+    <!--header section ends-->
+    <br />
+    <br /><br /><br />
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number: </label>
+            <input
+              type="phone"
+              name="name"
+              id="phone"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div class="form-group">
+            <label for="city">City:</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="E.g: Mumbai"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" cols="30" rows="2"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" cols="30" rows="6"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!--js file link-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

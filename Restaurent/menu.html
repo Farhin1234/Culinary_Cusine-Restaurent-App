@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Online Restaurent Meal Website "Culinary Canvas.com"</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!--header section starts-->
+    <header class="header">
+      <a href="#" class="logo"><img src="img/logo.png" />Culinary Canvas</a>
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about_us.html">About Us</a>
+        <a href="Contact_Us.html">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>login now</h3>
+        <input
+          type="email"
+          placeholder="your email"
+          name="email"
+          required
+          class="box"
+        />
+        <input
+          type="password"
+          placeholder="your password"
+          name="psw"
+          required
+          class="box"
+        />
+        <p>forgot password<a href="#"> click here</a></p>
+        <p>don't have an account<a href="#"> create now</a></p>
+        <label>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+            style="margin-bottom: 15px"
+          />
+          Remember me
+        </label>
+        <p>
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+        </p>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+    </header>
+    <!--header section ends-->
+    <br />
+    <br />
+    <br /><br /><br />
+
+    <div class="container">
+      <header>
+        <h1 class="heading">Our <span> Menu </span></h1>
+        <div class="shopping">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="quantity">0</span>
+        </div>
+      </header>
+
+      <div class="list"></div>
+    </div>
+    <div class="card">
+      <h1>Cart</h1>
+      <ul class="listCard"></ul>
+      <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+      </div>
+    </div>
+
+    <script src="js/cart_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--js file link-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

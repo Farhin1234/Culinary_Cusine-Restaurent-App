@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 82.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+:root {
+  --green: green;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 2rem solid var(--black);
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--black);
+  color: var(--black);
+  cursor: pointer;
+  background: none;
+}
+.btn:hover {
+  background: var(--green);
+  color: #fff;
+}
+.header {
+  position: fixed;
+  height: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 9%;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+}
+#navbar {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+.header .logo img {
+  height: 40px;
+}
+.header .navbar a {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+.header .navbar a:hover {
+  color: var(--green);
+  font-weight: bolder;
+}
+.header .icons div {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--black);
+  font-size: 2rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+}
+.header .icons div:hover {
+  background: var(--green);
+  color: #fff;
+}
+.header .login-form {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+}
+.header .login-form.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+.header .login-form h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.header .login-form .box {
+  width: 100%;
+  margin: 0.7rem 0;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+.header .login-form p {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: var(--light-color);
+}
+.header .login-form p a {
+  color: var(--green);
+  text-decoration: underline;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background-image: url("../img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+#home h1 {
+  padding-top: 7.5rem;
+  color: white;
+  text-align: center;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: cursive;
+}
+sss
+/* Services Section */
+#services {
+  margin: 54px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid green;
+  padding: 34px;
+  margin: 2px 55px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+#services .box img {
+  height: 70%;
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+  font-size: 1.7rem;
+}
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+.heading span {
+  background: var(--green);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.features .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.features .box-container .box {
+  padding: 3rem 2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+.features .box-container .box:hover {
+  outline: var(--outline);
+  outline-offset: 0rem;
+}
+.features .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding: 1rem 0;
+}
+/* Style for the Reviews Section */
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Style for each Comment Box */
+.comment-content {
+  flex: 0 1 30%; /* Adjust the width as needed */
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+.comment-content .comment-top {
+  margin-bottom: 10px;
+}
+/* Style for h6 (title) */
+.comment-content h6 {
+  color: green;
+}
+
+/* Style for span (subtitle) */
+.comment-content span {
+  color: black;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Style for p (comment content) */
+.comment-content p {
+  color: #888; /* Light color, adjust as needed */
+  line-height: 1.6;
+}
+
+/* Style for star icons */
+.comment-content .rating i {
+  color: orange;
+  margin-right: 5px;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  background-image: url("../img/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.social-icons {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+  color: white;
+  font-family: "Arial", sans-serif;
+  padding: 20px 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Custom Colors for Icons */
+.fab.fa-google {
+  color: #db4437; /* Google Red */
+}
+
+.fab.fa-facebook {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.fab.fa-instagram {
+  color: #e4405f; /* Instagram Pink */
+}
+
+.fab.fa-pinterest {
+  color: Red; /* Pinterest Red */
+}
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #555;
+}
+
+#about .btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  padding-top: 20px;
+}
+
+.progress-horizontal {
+  margin-bottom: 20px;
+}
+
+.progress {
+  width: 450px; /* Adjust the width of the vertical progress bar */
+  height: 20px; /* Set the height of the vertical progress bar */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: green; /* Set the color of the progress bar */
+}
+
+/* Add styling for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.rating span.selected {
+  color: gold;
+}
